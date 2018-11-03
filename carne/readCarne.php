@@ -3,7 +3,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Read huevos</title>
+  <title>Read Carne</title>
 </head>
 <body>
   <div >
@@ -12,26 +12,28 @@
       <thead>
 
         <tr>
-          <th>ID Huevos</th>
+          <th>ID Carne</th>
           <th>Características</th>
           <th>Precio</th>
         </tr>
       </thead>
       <tbody>
         <?php
-        $sql = "SELECT * FROM huevos";
+        $sql = "SELECT * FROM carne";
         $result = $mysqli->query($sql);
 
         if($result->num_rows > 0) {
           while($row = $result->fetch_assoc()) {
-            /*CREATE TABLE huevos(
-            id_huevos int(10) PRIMARY KEY,
-            caracteristicas varchar(100) NOT NULL,
-            precio float(30) NOT NULL
+            /*CREATE TABLE carne(
+              id_carne int(10) PRIMARY KEY,
+              caracteristicas varchar(100) NOT NULL,
+              precio float(30) NOT NULL
 
-            );*/
+            );
+
+            */
             echo "<tr>
-            <td>".$row['id_huevos']." </td>
+            <td>".$row['id_carne']." </td>
             <td>".$row['caracteristicas']."</td>
             <td>".$row['precio']."</td>
             <td>
