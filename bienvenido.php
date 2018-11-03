@@ -15,8 +15,8 @@
 				<a href="#" class="brand-logo">Logo</a>
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Menú</i></a>
 				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="index.php">Inicio</a></li>
 					<li><a href="carrito.html">Carrito de compra</a></li>
-					<li><a href="badges.html">Formas de pago</a></li>
 					<li><a href="conocenos.html">Conócenos</a></li>
 					<li><a href="contacto.html">Contacto</a></li>
 
@@ -26,8 +26,8 @@
 		</nav>
 
 		<ul class="sidenav" id="mobile-demo">
+			<li><a href="index.php">Inicio</a></li>
 			<li><a href="carrito.html">Carrito de compra</a></li>
-			<li><a href="badges.html">Formas de pago</a></li>
 			<li><a href="conocenos.html">Conócenos</a></li>						
 			<li><a href="contacto.html">Contacto</a></li>
 

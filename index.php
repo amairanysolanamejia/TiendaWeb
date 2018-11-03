@@ -1,3 +1,25 @@
+<!-- ¿Cómo funciona? 
+Lo primero que se deberealizar es en phpmyadmin realizar 3 tablas, "clasephp", "donas y "tienda", en clase prebe se importa el archivo "tablas.sql" y en "tienda" se importa "tiendasp", que corresponden a als tablas que se requieren para hacer funcionar el programa.
+
+Las tablas de clasephp corresponen al login de los usuarios.
+Las tablas de tienda corrsponden a los productos que la tienda vende y por cada uno de estos productos hay una carpeta que permite ver los productos existentes en la base de datos.
+Únnicamente las donas pueden ser creadas desde la página web, porque son demostrativas, para comprobar la conexión, pero el resto no.
+
+Los archivos "conexion" ,"conx" y "conh" sirven para realizar la conexión con la base de datos clasephp, donas y tienda respectivamente.
+
+Bienvenido muestra los productos de la tienda.
+
+Logout permite salir de la sesiin inciada.
+
+La pantalla principal de esta tienda es index, el presente código,  que permite al usuario ingresar o registrarse. Si no está registrado no podrá acceder a el carrito de compra, pero sí a conocernos y a las APIs.
+
+EN conócenos se encuentran nuestros valores e historia, algo sobre cada uno de los autores.
+
+En contacto está el formulario de contacto , así como lo las Apis de Fb, instragram, etc.
+-->
+
+
+
 <?php 
 require('conexion.php');
 
@@ -52,8 +74,8 @@ require('conexion.php');
 					<a href="#" class="brand-logo">Logo</a>
 					<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Menú</i></a>
 					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="index.php">Inicio</a></li>
 						<li><a href="carrito.html">Carrito de compra</a></li>
-						<li><a href="badges.html">Formas de pago</a></li>
 						<li><a href="conocenos.html">Conócenos</a></li>
 						<li><a href="contacto.html">Contacto</a></li>
 
@@ -63,8 +85,8 @@ require('conexion.php');
 			</nav>
 
 			<ul class="sidenav" id="mobile-demo">
+				<li><a href="index.php">Inicio</a></li>
 				<li><a href="carrito.html">Carrito de compra</a></li>
-				<li><a href="badges.html">Formas de pago</a></li>
 				<li><a href="conocenos.html">Conócenos</a></li>
 				<li><a href="contacto.html">Contacto</a></li>
 
@@ -101,10 +123,9 @@ require('conexion.php');
 						<p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
 					</div>
 					<div class="col l4 offset-l2 s12">
-						<h5 class="white-text">Links</h5>
+						<h5 class="white-text">Síguemos</h5>
 						<ul>
-							<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-							<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+							<a class="github-button" href="https://github.com/amairanysolanamejia" aria-label="Follow @amairanysolanamejia on GitHub">Follow @amairanysolanamejia</a>							<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
 							<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
 							<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
 						</ul>
