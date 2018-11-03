@@ -40,9 +40,11 @@
 		<a href="create.php"><button type="button">Agregar dona</button></a>
 		<br><br>
 		<a href="crudonut/readDonut.php"><button type="button">Ver donas</button></a>
-		<a href="createhuevos.php"><button type="button">Agregar huevos</button></a>
 		<br><br>
-		<a href="huevos/leerhuevos.php"><button type="button">Ver huevos></button></a>
+		<a href="createh.php"><button type="button">Agregar huevos</button></a>
+		<br><br>
+		<a href="huevos/readHuevos.php"><button type="button">Ver huevos></button></a>
+		<a href="" class="href"></a>
 	</div>
 	<footer class="page-footer amber darken-1">
 		<div class="container">

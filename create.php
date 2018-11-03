@@ -4,7 +4,6 @@
     <title>Agregar dona</title>
 </head>
 <body>
- hhh
 <fieldset>
     <legend>Agregar dona</legend>
  
