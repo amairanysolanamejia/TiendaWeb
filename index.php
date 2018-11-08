@@ -116,7 +116,7 @@ require('conexion.php');
 				    		<div class="col s4">	</div>
 				    		<div class="col s4">	</div>
 						    	<div class="col s4 right">
-						    		<a href="cart.html"><i class=" waves-effect small material-icons">shopping_cart</i></a>
+						    		<!-- <a href="cart.html"><i class=" waves-effect small material-icons">shopping_cart</i></a> -->
 						    	
 						    	</div>
 						    </div>
@@ -160,7 +160,7 @@ require('conexion.php');
   			</div>
   			<br>
   		</form>
-  		<a href="registro.php">Registrarse</a>
+  		<a class="waves-effect waves-light btn"  href="registro.php">Registrarse</a>
   		<div style="font-size: 16px;color: #cc0000;">
   			<?php echo isset($error)?utf8_decode($error):''; ?>
   		</div>
