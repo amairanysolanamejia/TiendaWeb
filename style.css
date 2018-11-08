@@ -1,6 +1,14 @@
+/*GOOGLE FONTS*/
+
 body{
 	background-color: white;
 }
+
+.prod{
+	height: 50%;
+	width: auto;
+}
+
 footer{
 background-color: #A5BF52;
 }
@@ -54,6 +62,10 @@ p{
 	height: 30px;
 }
 
+.product{
+		font-family: 'Dosis', sans-serif; 
+}
+
 .nosotros{
 	margin-left: 120px;
 	margin-top: 60px;
@@ -70,6 +82,7 @@ p{
   .recomendados{
   	background-color:#ada300;
   	margin: 0px;
+  	font-family: 'Acme', sans-serif;
   }
 
   h5{
@@ -91,6 +104,11 @@ p{
 	margin: 0px;
 	padding: 0px;
 	height: 70px;
+	font-family: 'Acme', sans-serif;
+}
+
+h4{
+	font-family: 'Acme', sans-serif;
 }
 
 .texto{
