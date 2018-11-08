@@ -89,6 +89,13 @@ p{
   	text-align: center;
   }
 
+  .largo{
+  	float: center;
+  	align-content: center;
+  	text-align: center;
+  		font-family: 'Acme', sans-serif;
+  }
+
   .cards{
   	margin: 0px;
   }
