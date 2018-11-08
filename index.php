@@ -26,7 +26,7 @@ require('conexion.php');
 	session_start();//se inicia una sesión que se guarda en $_SESSION
 
 	if (isset($_SESSION["id_usuario"])) {//Esta wea pregunta si existe una sesión
-		header("Location: bienvenido.php");//esto redirige
+		header("Location: cart.html");//esto redirige
 	}
 
 	if (!empty($_POST)) {
@@ -47,7 +47,7 @@ require('conexion.php');
 			echo "$row";
 			$_SESSION['id_usuario'] = $row['id_usuario'];
 			$_SESSION['tipo_usuario'] = $row['id_tipo'];
-			header("Location: bienvenido.php");
+			header("Location: cart.html");
 		}else{
 			$error = "Nombre de usuario o contraseña inválidos";
 		}
@@ -57,6 +57,8 @@ require('conexion.php');
 
 	?>
  <!-- Esta parte creo que se puede separar en php y html, pero no logreé que funcionará -->
+	
+	
 <!DOCTYPE html>
 	<html lang="es">
 	<head>
@@ -85,15 +87,17 @@ require('conexion.php');
 					
 					<ul class="left">
 						<li><a href="conocenos.html">Conócenos</a></li>
-						<li><a href="contacto.html">Contacto</a></li>
 					</ul>
-					<a href="index.html" class="brand-logo center"><img class="img-responsive" src="img/theaka.png" height="60" width="auto"></a>
+					<a href="index.php" class="brand-logo center"><img class="img-responsive" src="img/theaka.png" height="60" width="auto"></a>
 					<ul class="right">
-						<li><a href="contacto.html">Productos</a></li>
-						<li><a href="cart.html"><i class="large material-icons">shopping_cart</i></a></li>
+						<li><a href="contacto.html">Contacto</a></li>
+
+						<!-- <li><a href="contacto.html">Productos</a></li> -->
+						<!-- <li><a href="cart.html"><i class="large material-icons">shopping_cart</i></a></li> -->
 					</ul>
 				</div>
 		</nav>
+
 
 		<!--Mobile Navbar-->
 			<div class="navbarsmall">
@@ -138,48 +142,29 @@ require('conexion.php');
       	<div class="col s12"><img class="responsive-img" src="img/super.jpeg"></div>
   		</div>
 
-  		<div class="row recomendados">	<div class="col s12"><h5>Regístrate para poder comprar</h5></div></div><br>
+  		<div class="row recomendados">	<div class="col s12"><h5>Regístrate o inicia sesión para poder comprar y acceder al carrito</h5></div></div>
 
-  		<div class="largo">
-  		<a class="waves-effect waves-light btn-large" href="ingresa.html">Si ya tienes una cuenta da click aqui</a>
+  		  		<form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
+
+  			<div>
+  				<label> Usuario: </label>
+  				<input id="usuario" name="usuario" type="text">
+  			</div>
+  			<br>
+  			<div><label>Contraseña: </label>
+  				<input id="password" name="password" type="password">
+  			</div>
+  			<br>
+  			<div>
+  				<input name="login" value="Iniciar Sesión" type="submit">
+  			</div>
+  			<br>
+  		</form>
+  		<a href="registro.php">Registrarse</a>
+  		<div style="font-size: 16px;color: #cc0000;">
+  			<?php echo isset($error)?utf8_decode($error):''; ?>
   		</div>
 
-  		<div class="container">
-  		<div class="row">
-  			<br><br>
-    <form class="col s12">
-      <div class="row">
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">First Name</label>
-        </div>
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password">Password</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          
-<a class="waves-effect waves-light btn">Registrarme</a>
-        </div>
-      </div>
-    </form>
-  </div>
-  </div>
-        
   		
 		
 		<footer class="page-footer z-depth-3">
