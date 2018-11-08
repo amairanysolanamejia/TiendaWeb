@@ -32,17 +32,30 @@
 				<li><a href="contacto.html">Contacto</a></li>
 
 			</ul>
-		</header> <!-- Contenido de la página -->
+		</header>
 
-		<!-- Aquí convendría poner imágenes de los productos y a un lado el botón de agregar -->
-		<br><br>
-		
-		<h5>Para poder realizar compras vuelve a la página principal e inicia sesión, si no tienes una cuenta, regístrate.</h5>
-		<img src="img/canda.jpg" alt="img">
+		<h1>Bienvenido a AKA, la mejor tienda online.</h1>
+		<h3>El primer paso es iniciar sesión, si no tienes una, regístrate.</h3>
+		<form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
 
-		<br><br>
-		<!-- Comando para poder cerrar cesión -->
-
+			<div>
+				<label> Usuario: </label>
+				<input id="usuario" name="usuario" type="text">
+			</div>
+			<br>
+			<div><label>Contraseña: </label>
+				<input id="password" name="password" type="password">
+			</div>
+			<br>
+			<div>
+				<input name="login" value="Iniciar Sesión" type="submit">
+			</div>
+			<br>
+		</form>
+		<a href="registro.php">Registrarse</a>
+		<div style="font-size: 16px;color: #cc0000;">
+			<?php echo isset($error)?utf8_decode($error):''; ?>
+		</div>
 		<footer class="page-footer amber darken-1">
 			<div class="container">
 				<div class="row">

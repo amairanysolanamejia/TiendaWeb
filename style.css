@@ -1,0 +1,169 @@
+body{
+	background-color: white;
+}
+footer{
+background-color: #A5BF52;
+}
+.api{
+	padding: 20px;
+}
+.margen{
+	margin-left: 120px;
+	margin-right: 120px;
+	background-color: #eee677;
+}
+
+.verde{
+	background-color: #eee677;
+}
+.fixed{
+	position: fixed;
+}
+.anuncio{
+	background-color:#ada300;
+	height: 25px;
+	margin: 0px;
+	text-align: center;
+}
+
+a{
+	font-size: 14px;
+	color: white;
+}
+
+h4{
+	color: black;
+}
+.nav-extended {
+    font-size: 14px;
+    color: black;
+    margin: 0px;
+  	background-color: #A5BF52;
+  	padding-left: 120px;
+  	padding-right: 120px;
+  	padding-top: 5px;
+  	padding-bottom: 5px;
+  }
+
+p{
+	margin: 0px;
+	padding: 2px;
+}
+
+.pink{
+	height: 30px;
+}
+
+.nosotros{
+	margin-left: 120px;
+	margin-top: 60px;
+	text-align: justify;
+
+}
+
+  .foto{
+  	background-color: white;
+ 	margin-top: 5px;
+ 	margin-bottom: 0px;
+  }
+
+  .recomendados{
+  	background-color:#ada300;
+  	margin: 0px;
+  }
+
+  h5{
+  	text-align: center;
+  }
+
+  .cards{
+  	margin: 0px;
+  }
+
+.item{
+	max-height: 250px;
+	min-height: 100px;
+	width: auto;
+}
+
+.about{
+	background-color: #eee677;
+	margin: 0px;
+	padding: 0px;
+	height: 70px;
+}
+
+.texto{
+	text-align: center;
+	font-size: 20px;
+}
+
+.fotos1{
+	margin: 10px;
+}
+
+.page-footer {
+    font-size: 14px;
+    color: black;
+    margin: 0px;
+  	background-color: #ada300;
+  	padding-left: 30px;
+  	padding-right: 30px;
+  	padding-top: 5px;
+  	padding-bottom: 5px;
+  }
+
+.cardcolor{
+	font-style: bold;
+	background-color: #eee677;
+}
+
+.todos{
+	padding: 0px;
+	float: center;
+	font-size: 12px;
+}
+
+.ayuda{
+	text-align:right;
+}
+
+.pagos{
+	padding-top: 20px;
+	align-content: center;
+	float: center;
+}
+
+h6{
+	font-style: bold;
+}
+
+.navbarsmall{
+	font-size: 14px;
+    color: black;
+    margin: 0px;
+  	background-color: #A5BF52;
+  	padding-left: 30px;
+  	padding-right: 30px;
+  	padding-top: 5px;
+  	padding-bottom: 5px;
+  	align-content: center;
+}
+
+.sidenav{
+	background-color: #ada300;
+}
+
+.userview{
+	align-content: center;
+}
+
+.logo1{
+	align-content: center;
+	float: center;
+	text-align: center;
+}
+
+.val{
+	padding-left: 80px;
+}
