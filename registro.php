@@ -125,14 +125,14 @@
 		<!--Mobile Navbar-->
 			<div class="navbarsmall">
 			<div class="nav-wrapper hide-on-med-and-up">
-				<img class="img-responsive logo1 center" src="img/theaka.png" >
+				<a href="index.php"><img class="img-responsive logo1 center" href="index.php" src="img/theaka.png" ></a>
 				<a href="#" data-target="slide-out" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
 					
 				<ul id="slide-out" class="sidenav">
 				    <li><div class="user-view">
 				    	<div class="row">
 				    		<div class="col s6">
-				    	<img class="img-responsive logo1 center" src="img/theaka.png" >
+				    	<a href="index.php"><img class="img-responsive logo1 center" href="index.php" src="img/theaka.png" ></a>
 				    	</div>
 				    	<div class="col s6 right">
 				    		<div class="row">
@@ -221,7 +221,7 @@
 
 <footer class="page-footer z-depth-3">
 				<div class="row">
-					<div class="col l4 s12">
+					<div class="col l4 s12 center">
 						<h6 class="white-text">Síguenos</h6>
 						<ul>
 							<a class="github-button" href="https://github.com/amairanysolanamejia" aria-label="Follow @amairanysolanamejia on GitHub">Follow @amairanysolanamejia</a><br>
@@ -230,14 +230,14 @@
 <a class="github-button" href="https://github.com/KarinaFloG" aria-label="Follow @KarinaFloG on GitHub">Follow @KarinaFloG</a>
 						</ul>
 					</div>
-					<div class="col l4 s12">
+					<div class="col l4 s12 center">
 						<div class="row pagos">
 							<div class="col s3"><img class="responsive-img" src="img/mastercard.png" height="30" width="auto"></div>				
 							<div class="col s3"><img src="img/visa.png" height="30" width="auto"></div>
 							<div class="col s3"><img src="img/paypal.png" height="30" width="auto"></div>
 						</div>						
 					</div>
-					<div class="col l4 s12 ayuda">
+					<div class="col l4 s12 center">
 						<h6 class="white-text">¿Necesitas ayuda?</h6>
 						<p class="white-text">Llámanos al 5134.0034<br>
 						o al 01800.367.8737</p>
