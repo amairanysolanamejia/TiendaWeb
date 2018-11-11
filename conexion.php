@@ -8,7 +8,7 @@
 	$mysqli = new mysqli("localhost","root","","clasephp"); 
 	//Esta variable va a ser un objeto que recibe lo de la linea 5
 	if(mysqli_connect_errno()){
-		echo "No se hapodido conectar a la base",
+		echo "No se ha podido conectar a la base",
 		mysqli_connect_error(); /*La coma es para que lo imprima en el echo*/
 		exit();
 	}

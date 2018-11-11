@@ -5,7 +5,7 @@ Las tablas de clasephp corresponen al login de los usuarios.
 Las tablas de tienda corrsponden a los productos que la tienda vende y por cada uno de estos productos hay una carpeta que permite ver los productos existentes en la base de datos.
 Únnicamente las donas pueden ser creadas desde la página web, porque son demostrativas, para comprobar la conexión, pero el resto no.
 
-Los archivos "conexion" ,"conx" y "conh" sirven para realizar la conexión con la base de datos clasephp, donas y tienda respectivamente.
+Los archivos "conexion" ,"conx" y "conxh" sirven para realizar la conexión con la base de datos clasephp, donas y tienda respectivamente.
 
 Bienvenido muestra los productos de la tienda.
 
@@ -79,7 +79,7 @@ require('conexion.php');
 	<body>
 		<header>
 		<!--Barra de anuncio pequeño-->
-		<div class="row anuncio hide-on-small-only"><p>Aprovecha envío gratis en compras mayores a $800</p></div>
+		<div class="row anuncio hide-on-small-only"><p>Checha nuestros nuevos productos</p></div>
 
 		<!--NavBar-->
 		<nav class="nav-extended  z-depth-3 ">
@@ -143,28 +143,37 @@ require('conexion.php');
   		</div>
 
   		<div class="row recomendados">	<div class="col s12"><h5>Regístrate o inicia sesión para poder comprar y acceder al carrito</h5></div></div>
+		<br>
 
-  		  		<form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
-
-  			<div>
-  				<label> Usuario: </label>
+		<div class="container">
+  		  	<form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
+  			<div class="row">
+  			<div class="input-field col s6">
+  				<label for="last_name"> Usuario: </label>
   				<input id="usuario" name="usuario" type="text">
   			</div>
-  			<br>
-  			<div><label>Contraseña: </label>
+  			
+  			<div class="input-field col s6"><label>Contraseña: </label>
   				<input id="password" name="password" type="password">
   			</div>
+  		</div>
   			<br>
-  			<div>
-  				<input name="login" value="Iniciar Sesión" type="submit">
+  			<div class="row">
+  			<div class="col s12 center">
+  				<a class="waves-effect waves-light btn btn1"  href="registro.php"><input name="login" value="Iniciar Sesión" type="submit"></a>
   			</div>
-  			<br>
-  		</form>
-  		<a class="waves-effect waves-light btn"  href="registro.php">Registrarse</a>
+  			</div>
+  			<div class="row">
+  			<div class="col s12 center">
+  				<a class="waves-effect waves-light btn btn1"  href="registro.php">Registrarse</a>
+  			</div>
+  			</div>
+  			</form>
   		<div style="font-size: 16px;color: #cc0000;">
   			<?php echo isset($error)?utf8_decode($error):''; ?>
   		</div>
-
+		</div>
+		<br>
   		
 		
 		<footer class="page-footer z-depth-3">

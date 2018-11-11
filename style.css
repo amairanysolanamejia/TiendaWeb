@@ -1,5 +1,44 @@
 /*GOOGLE FONTS*/
 
+.input-field label{
+	color: black;
+	font-size: 20px;
+	font-family: 'Dosis', sans-serif; 
+}
+
+.input-field option{
+	color: black;
+	font-size: 20px;
+	font-family: 'Dosis', sans-serif; 
+}
+
+.btn1{
+	background-color: #A5BF52;
+	font-style: bold;
+	color: black;
+	font-size: 18px;
+	font-family: 'Acme', sans-serif;
+}
+
+.btn1 input[value="Registrarme"]{
+	font-style: bold;
+	color: black;
+	font-size: 18px;
+	font-family: 'Dosis', sans-serif; 
+}
+
+.btn1 input[type="submit"]{
+	font-style: bold;
+	color: black;
+	font-size: 18px;
+	font-family: 'Acme', sans-serif;
+}
+
+.waves-effect{
+	background-color: #A5BF52;
+}
+
+
 body{
 	background-color: white;
 }

@@ -160,11 +160,7 @@
 			</div>
 		</header>
 
-
-
 <!-- -->
-<div class="row recomendados">	<div class="col s12"><h5>Regístrate</h5></div></div><br>
-
 <div class="container">
  
     <div class="row">
@@ -185,7 +181,7 @@
           <label for="password">Contraseña</label>
         </div>
         <div class="input-field col s6">
-          <input id="con_password" name="con_password" type="password">
+          <inputid="con_password" name="con_password" type="password">
           <label for="password">Confirmar contraseña</label>
         </div>
     </div>
@@ -203,11 +199,8 @@
 				</select>
 			</div>
 		</div></div>
-
 		 <div class="row">
-		<div class="col s12">
-		<a class="waves-effect waves-yellow btn btn1"><input name="registar" type="button" value="Registrarme" onClick="validar();"></a>
-		</div> 
+		<div class="col s12"><input name="registar" type="button" value="Registrar" onClick="validar();"></div> 
 		</div>
 
       </div>
