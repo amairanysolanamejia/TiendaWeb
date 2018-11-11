@@ -34,10 +34,6 @@
 	font-family: 'Acme', sans-serif;
 }
 
-.waves-effect{
-	background-color: #A5BF52;
-}
-
 
 body{
 	background-color: white;
@@ -51,6 +47,7 @@ body{
 footer{
 background-color: #A5BF52;
 }
+
 .api{
 	padding: 20px;
 }
@@ -151,8 +148,9 @@ h4{
 }
 
 .texto{
-	text-align: center;
+	text-align: justify;
 	font-size: 20px;
+	font-family: 'Dosis', sans-serif; 
 }
 
 .fotos1{
