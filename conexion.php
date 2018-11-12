@@ -5,8 +5,8 @@
 	//SERVER(IP),Usuario de la base de datos,contraseña, nombre de base de datos
 	//Esto es lo que nos importa
 
-	$mysqli = new mysqli("localhost","root","","clasephp"); 
-	//Esta variable va a ser un objeto que recibe lo de la linea 5
+	$mysqli = new mysqli("localhost","root","","id7821556_clasephp"); 
+_	//Esta variable va a ser un objeto que recibe lo de la linea 5
 	if(mysqli_connect_errno()){
 		echo "No se ha podido conectar a la base",
 		mysqli_connect_error(); /*La coma es para que lo imprima en el echo*/
