@@ -46,7 +46,7 @@ require('conexion.php');
 			$row = $result->fetch_assoc();//separa en un arreglo
 			echo "$row";
 			$_SESSION['id_usuario'] = $row['id_usuario'];
-			$_SESSION['tipo_usuario'] = $row['id_tipo'];
+			//$_SESSION['tipo_usuario'] = $row['id_tipo'];
 			header("Location: cart.html");
 		}else{
 			$error = "Nombre de usuario o contraseña inválidos";
@@ -160,7 +160,7 @@ require('conexion.php');
   			<br>
   			<div class="row">
   			<div class="col s12 center">
-  				<a class="waves-effect waves-light btn btn1"  href="registro.php"><input name="login" value="Iniciar Sesión" type="submit"></a>
+  				<a class="waves-effect waves-light btn btn1"  href="cart.html"><input name="login" value="Iniciar Sesión" type="submit"></a>
   			</div>
   			</div>
   			<div class="row">

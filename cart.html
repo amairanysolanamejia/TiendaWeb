@@ -17,7 +17,7 @@
 	<body>
     <header>
     <!--Barra de anuncio pequeño-->
-    <div class="row anuncio hide-on-small-only"><p>Aprovecha envío gratis en compras mayores a $800</p></div>
+    <div class="row anuncio hide-on-small-only"><p>Conoce nuestros nuevos productos</p></div>
 
     <!--NavBar-->
     <nav class="nav-extended  z-depth-3 ">
@@ -29,6 +29,8 @@
           <a href="index.html" class="brand-logo center"><img class="img-responsive" src="img/theaka.png" height="60" width="auto"></a>
           <ul class="right">
             <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="logout.php">Cerrar sesión</a></li>
+
 
 <!--            <li><a href="contacto.html">Productos</a></li>
  -->          </ul>
@@ -61,12 +63,14 @@
               </div>
 
             </div></li>
+            <li><div class="divider"></div></li>
            <li><a href="contacto.html">Productos</a></li>
-             <li><div class="divider"></div></li>
+             
 
            
             <li><a class="waves-effect" href="contacto.html">Contacto</a></li>
               <li><a class="waves-effect" href="conocenos.html">Conócenos</a></li>
+               <li><a href="logout.php">Cerrar sesión</a></li>
             <li><div class="divider"></div></li>
         </ul>
       </div>
@@ -74,21 +78,22 @@
     </header>
 
 
-    <div class="row recomendados">  <div class="col s12"><h5>Llena tu carrito</h5></div></div>
-        <a class="black-text" href="logout.php">Cerrar la sesión</a>
-
+    <div class="row recomendados">  <div class="col s12"><h5>Llena tu carrito</h5></div></div><br>
+  
+  <div class="card">
 <!--EMPIEZAN PRODUCTOS-->
  <div class="row">
   <!--CHIPS MORADAS-->
   <div class="col m4 s4">
   <div class="product">
     <div class="product-image">
-      <img class="responsive-img prod" src="img/chips.jpg">
+      <img class="responsive-img prod" src="img/carne.jpg">
     </div>
+    
     <div class="product-details">
-      <div class="product-title">Chips moradas sabor Fuego</div>
+      <div class="product-title">Bistek de res por kilo</div>
     </div>
-    <div class="product-price">12.99</div>
+    <div class="product-price">154.00</div>
     <div class="product-quantity">
       <input type="number" value="0" min="0">
     </div>
@@ -98,7 +103,7 @@
       </button>
     </div>
     <div class="product-line-price">00.00</div>
-  </div></div>
+ </div></div>
 
   <div class="col m4 s4">
   <div class="product">
@@ -106,7 +111,7 @@
       <img  class="responsive-img prod" src="img/leche.jpg">
     </div>
     <div class="product-details">
-      <div class="product-title">lecha Alpura Clásica</div>
+      <div class="product-title">Leche Alpura Clásica</div>
     </div>
     <div class="product-price">19.99</div>
     <div class="product-quantity">
@@ -123,12 +128,12 @@
  <div class="col m4 s4">
   <div class="product">
     <div class="product-image">
-      <img  class="responsive-img prod" src="img/fud.jpg">
+      <img  class="responsive-img prod" src="img/huevo1.jpg">
     </div>
     <div class="product-details">
-      <div class="product-title">Paquete salchichas 800g</div>
+      <div class="product-title">Huevo rojo Bachoco 12px</div>
     </div>
-    <div class="product-price">29.99</div>
+    <div class="product-price">25.99</div>
     <div class="product-quantity">
       <input type="number" value="0" min="0">
     </div>
@@ -145,12 +150,12 @@
   <div class="col m4 s4">
   <div class="product">
     <div class="product-image">
-      <img  class="responsive-img prod" src="img/cafe.jpg">
+      <img  class="responsive-img prod" src="img/papel.jpg">
     </div>
     <div class="product-details">
-      <div class="product-title">Café Soluble Clásico 800g</div>
+      <div class="product-title">Papel higiénico rojo 4 rollos</div>
     </div>
-    <div class="product-price">49.99</div>
+    <div class="product-price">29.99</div>
     <div class="product-quantity">
       <input type="number" value="0" min="0">
     </div>
@@ -165,12 +170,12 @@
   <div class="col m4 s4">
   <div class="product">
     <div class="product-image">
-      <img  class="responsive-img prod" src="img/yogurth.jpg">
+      <img  class="responsive-img prod" src="img/shampoo.jpg">
     </div>
     <div class="product-details">
-      <div class="product-title">Yogurth natual 1kg</div>
+      <div class="product-title">Head&Shoulders 700ml</div>
     </div>
-    <div class="product-price">29.99</div>
+    <div class="product-price">79.99</div>
     <div class="product-quantity">
       <input type="number" value="0" min="0">
     </div>
@@ -185,12 +190,12 @@
  <div class="col m4 s4">
   <div class="product">
     <div class="product-image">
-      <img  class="responsive-img prod" src="img/cereal.jpg">
+      <img  class="responsive-img prod" src="img/chips.jpg">
     </div>
     <div class="product-details">
-      <div class="product-title">Cereal Kellog's Zucaritas 800g</div>
+      <div class="product-title">Chips sabor Fuego</div>
     </div>
-    <div class="product-price">39.99</div>
+    <div class="product-price">12.99</div>
     <div class="product-quantity">
       <input type="number" value="0" min="0">
     </div>
@@ -202,7 +207,7 @@
       <div class="product-line-price">00.00</div>
   </div></div>
 </div>
-
+</div>
 
 
   <div class="totals">
@@ -211,20 +216,19 @@
       <div class="totals-value" id="cart-subtotal">0.007</div>
     </div>
     <div class="totals-item">
-      <label>Tax (5%)</label>
+      <label>IVA (5%)</label>
       <div class="totals-value" id="cart-tax">3.60</div>
     </div>
     <div class="totals-item">
-      <label>Shipping</label>
+      <label>Envío</label>
       <div class="totals-value" id="cart-shipping">30.00</div>
     </div>
     <div class="totals-item totals-item-total">
-      <label>Grand Total</label>
+      <label>Total</label>
       <div class="totals-value" id="cart-total">00.00</div>
     </div>
+    <br>
   </div>
-      
-      <button class="checkout">Checkout</button>
 
 </div>
 

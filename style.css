@@ -89,18 +89,66 @@ h4{
   	padding-bottom: 5px;
   }
 
+  .totals .totals-item label{
+  	font-size: 2.5vh;
+  	color: black;
+  	font-weight: bold;
+  	font-style: underline;
+  }
+
 p{
 	margin: 0px;
 	padding: 2px;
+}
+
+.totals{
+	background-color: #eee677;
+	font-size: 3.5vh;
+	text-align: center;
+}
+
+.backg{
+	background-color: ;
 }
 
 .pink{
 	height: 30px;
 }
 
+.card{
+  margin: 20px;
+}
+.product-quantity input{
+	font-size: 3vh;
+}
+
+.product-line-price{
+	font-weight: bold;
+}
 .product{
 		font-family: 'Dosis', sans-serif; 
 }
+
+.product-details .product-title{
+  font-size: 3.5vh;
+  text-align: center;
+  font-weight: bold; 
+}
+.product-line-price{
+	font-size: 3vh;
+}
+.product-removal .remove-product{
+	background-color: #eee677;
+	padding: 5px;
+	align-content: right;
+	font-size: 3vh;
+}
+.product-price{
+  font-size: 3vh;
+  text-align: center;
+}
+
+
 
 .nosotros{
 	margin-left: 120px;
@@ -119,6 +167,7 @@ p{
   	background-color:#ada300;
   	margin: 0px;
   	font-family: 'Acme', sans-serif;
+  	font-size: 4vh;
   }
 
   h5{
