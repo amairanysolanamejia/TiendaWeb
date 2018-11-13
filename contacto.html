@@ -74,107 +74,32 @@
 
 		<div class="row">
     <form class="col s12">
+    <form action="mensaje.php" method="post">
       <div class="row">
   
-       <div class="input-field col s6">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">Nombre</label>
-        </div>
-
-       <div class="input-field col s6">
-          <i class="material-icons prefix">phone</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">Telefono</label>
-        </div>
-      </div>
-
-      <div class="row">
-         <div class="input-field col s6">
-          <i class="material-icons prefix">mail</i>
-          <input id="icon_telephone" type="tel" class="validate">
-          <label for="icon_telephone">Correo Electronico</label>
-        </div>
-
-          <div class="input-field col s6">
-          <i class="material-icons prefix">edit_mode</i>
-          <input id="icon_telephone" type="tel" class="validate">
-          <label for="icon_telephone">Asunto</label>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="input-field col s12">
-             <i class="material-icons prefix">insert_emoticon</i>
-          <input id="password" type="password" class="active">
-          <label for="password">Mensaje</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-
-          <input id="email" type="email" class="active">
-         <input id="email" type="email" class="active">
-           <input id="email" type="email" class="active">
-             <input id="email" type="email" class="active">
-        </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">account_circle</i>
+              <input id="icon_prefix" type="text" class="validate" name="nombre" required>
+              <label for="icon_prefix">Nombre</label>
+            </div>
+            <div class="input-field col s6">
+              <i class="material-icons prefix">mail</i>
+              <input id="email" type="email" class="validate" name="correo" required>
+              <label for="email" data-error="Correo no valido" data-success="Correo valido">Email</label>
+            </div>
+          </div>
+          <h6>Mensaje</h6>
+          <div class="input-field col s12">
+            <textarea name="mensaje" id="textarea1" class="materialize-textarea"></textarea>
+            <label for="textarea1" required>Textarea</label>
+          </div>
+          <input type="submit" value="Enviar" class="btn black right">
+        </form>
       </div>
     </form>      
   </div>
 </div>
-		<div class=" hide-on-med-and-up">
-		<div class="row recomendados">	<div class="col s12"><h5>Ponte en contacto con nosotras</h5></div></div>
 
-		<div class="row">
-    <form class="col s12">
-      <div class="row">
-  
-       <div class="input-field col s6">
-          <i class="material-icons prefix">account_circle</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">Nombre</label>
-        </div>
-
-       <div class="input-field col s6">
-          <i class="material-icons prefix">phone</i>
-          <input id="icon_prefix" type="text" class="validate">
-          <label for="icon_prefix">Telefono</label>
-        </div>
-      </div>
-
-      <div class="row">
-         <div class="input-field col s6">
-          <i class="material-icons prefix">mail</i>
-          <input id="icon_telephone" type="tel" class="validate">
-          <label for="icon_telephone">Correo Electronico</label>
-        </div>
-
-          <div class="input-field col s6">
-          <i class="material-icons prefix">edit_mode</i>
-          <input id="icon_telephone" type="tel" class="validate">
-          <label for="icon_telephone">Asunto</label>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="input-field col s12">
-             <i class="material-icons prefix">insert_emoticon</i>
-          <input id="password" type="password" class="active">
-          <label for="password">Mensaje</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-
-          <input id="email" type="email" class="active">
-         <input id="email" type="email" class="active">
-           <input id="email" type="email" class="active">
-             <input id="email" type="email" class="active">
-        </div>
-      </div>
-    </form>      
-  </div>
-</div>
 		
 		<footer class="page-footer z-depth-3">
 				<div class="row">
